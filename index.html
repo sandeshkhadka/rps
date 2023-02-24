@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Rock Paper Scissors</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
 
-        <script src="js/index.js"></script>
-    </body>
+<head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Welcome to Rock, Paper and Scissors</h1>
+    <p style="text-align: center;font-size: 28px;">Make your move</p>
+    <div class='choice-container'>
+        <div class='rock'>
+            <button data-choice="rock" class="choiceBtn" type="button">Rock</button>
+        </div>
+        <div class='paper'>
+            <button data-choice="paper" class="choiceBtn" type="button">Paper</button>
+        </div>
+        <div class='scissors'>
+            <button data-choice="scissors" class="choiceBtn" type="button">Scissors</button>
+        </div>
+    </div>
+    <div class = 'result'></div>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
