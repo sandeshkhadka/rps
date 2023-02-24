@@ -10,19 +10,47 @@
 
 <body>
     <h1>Welcome to Rock, Paper and Scissors</h1>
-    <p style="text-align: center;font-size: 28px;">Make your move</p>
+    <p class="secondaryText">Make your move</p>
     <div class='choice-container'>
         <div class='rock'>
-            <button data-choice="rock" class="choiceBtn" type="button">Rock</button>
+            <img data-choice="rock" class="choiceBtn" src="images/rock.png" alt="">
+            <!-- <button data-choice="rock" class="choiceBtn" type="button">Rock</button> -->
         </div>
         <div class='paper'>
-            <button data-choice="paper" class="choiceBtn" type="button">Paper</button>
+            <img data-choice="paper" class="choiceBtn" src="images/paper.png" alt="">
+            <!-- <button data-choice="paper" class="choiceBtn" type="button">Paper</button> -->
         </div>
         <div class='scissors'>
-            <button data-choice="scissors" class="choiceBtn" type="button">Scissors</button>
+            <img data-choice="scissors" class="choiceBtn" src="images/scissors.png" alt="">
+            <!-- <button data-choice="scissors" class="choiceBtn" type="button">Scissors</button> -->
         </div>
     </div>
-    <div class = 'result'></div>
+    <div class = 'playAgain'>
+        <button class="hide" id="playAgain" type="button">Play Again</button>
+    </div>
+    <div class='scoreboard'>
+        <div class="scoreboard-header">
+            scoreboard
+        </div>
+        <div class = 'round-counter'>Round: 1 Draw : 0 </div>
+        <div class='board-wrapper'>
+            <div class='player-board'>
+                <ul>
+                    <li>Last selection</li>
+                    <li><img id="playerLastChoice" src="images/question-mark.png" alt=""></li>
+                    <li id = "playerScore">Score: 0</li>
+                </ul>
+            </div>
+            <div class='computer-board'>
+                <ul>
+                    <li>Last selection</li>
+                    <li><img id="computerLastChoice" src="images/question-mark.png" alt=""></li>
+                    <li id="computerScore">Score: 0</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class='result'></div>
     <script src="js/index.js"></script>
 </body>
 
