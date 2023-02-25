@@ -33,6 +33,7 @@ const playAgain = document.querySelector("#playAgain");
 function resetGame() {
     playerScore = computerScore = 0;
     round = 1;
+    draw = 0; 
     playerLastChoice.setAttribute("src", "images/question-mark.png");
     computerLastChoice.setAttribute("src", "images/question-mark.png");
     computerScoreHolder.innerText = `Score: ${computerScore}`;
